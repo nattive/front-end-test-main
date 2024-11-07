@@ -1,0 +1,108 @@
+.searchBar {
+    width: 100%;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 12px 0;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  
+  .searchGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .searchItem {
+    flex: 1;
+    min-width: 140px;
+    max-width: 200px;
+  }
+  
+  .label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #6b7280;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+  }
+  
+  .value {
+    font-size: 14px;
+    color: #1a1a1a;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .editButton {
+    background-color: #2d7e8c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+  }
+  
+  .editButton:hover {
+    background-color: #236b77;
+  }
+  
+  .buttonWrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  @media (max-width: 1200px) {
+    .searchGrid {
+      gap: 16px;
+    }
+    
+    .searchItem {
+      min-width: 130px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .searchGrid {
+      gap: 12px;
+    }
+  
+    .searchItem {
+      min-width: calc(50% - 12px);
+      max-width: none;
+    }
+    
+    .buttonWrapper {
+      width: 100%;
+      margin-top: 12px;
+    }
+    
+    .editButton {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .searchItem {
+      min-width: 100%;
+    }
+    
+    .container {
+      padding: 0 16px;
+    }
+  }
